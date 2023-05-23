@@ -12,7 +12,7 @@ function setup(){
     video.size(500, 400);
     video.position(50, 100);
      pose = ml5.poseNet(video,listo);
-     Pose.on( "pose",respuesta);
+     pose.on( "pose",respuesta);
 }
 function listo (){
     console.log("listo");
